@@ -751,6 +751,8 @@ a, .btn {
     padding-right: 15px; } }
 
 @media (min-width: 361px) {
+   .side-menu {
+    padding-left: 0px; }
   .side-menu__header {
     margin-bottom: 27px; }
   .nav__logo {
