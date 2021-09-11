@@ -974,7 +974,7 @@ a, .btn {
   position: fixed;
   top: 0;
   right: 0;
-  transform: translateX(102%);
+  transform: translateX(130%);
   width: 320px;
   z-index: 11;
   height: 100%; }
@@ -1025,7 +1025,7 @@ a, .btn {
   position: fixed;
   top: 0;
   right: 0;
-  transform: translateX(102%);
+  transform: translateX(130%);
   width: 320px;
   z-index: 12;
   height: 100%; }
@@ -1422,6 +1422,35 @@ a, .btn {
     max-width: calc(100vw - 320px); }
   .content {
     display: flex; }
+  .modal-feedback {
+    width: 440px; }
+    .modal-feedback .order-btn {
+      margin: 0 62%; }
+  .modal-input {
+    margin-left: 31px;
+    width: 356px; }
+  .modal-feedback .nav__btn {
+    position: absolute;
+    left: -88px;
+    top: 9px; }
+  .modal-call {
+    width: 440px; }
+    .modal-call .nav__btn {
+      position: absolute;
+      left: -88px;
+      top: 9px; }
+    .modal-call .order-btn {
+      margin: 0 62%; }
+  .modal-call__header {
+    padding-left: 31px;
+    font-size: 1.45rem;
+    margin-top: 41px; }
+    .modal-call__header::before {
+      top: 32px; }
+  .modal-call__remark {
+    width: 370px;
+    padding-left: 32px;
+    font-size: .88rem; }
   .side-menu {
     position: unset;
     transform: unset;
@@ -1446,6 +1475,8 @@ a, .btn {
       margin-bottom: 46px; }
     .side-menu .langs {
       padding-left: 22px; }
+    .side-menu .close {
+      display: none; }
   .services__title {
     padding-left: 21px; }
     .services__title::before {
@@ -1455,8 +1486,6 @@ a, .btn {
     font-size: .85rem; }
   .services__name {
     font-size: .85rem; }
-  .close {
-    display: none; }
   .repair__item {
     margin-left: 0;
     margin-right: 28px; }
