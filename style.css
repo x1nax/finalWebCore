@@ -618,7 +618,7 @@ a, .btn {
   border-radius: 50%;
   border: 3px solid transparent; }
 
-.hover, .brend__btn:hover svg, .kind__btn:hover svg, .order-btn:hover, .order-btn:focus, .nav__btn:hover svg {
+.hover, .brend__btn:hover svg, .kind__btn:hover svg, .brend__btn:focus svg, .kind__btn:focus svg, .order-btn:hover, .order-btn:focus, .nav__btn:hover svg, .nav__btn:focus svg {
   opacity: 1;
   transition: .3s;
   border-color: #FF69B4;
@@ -1059,7 +1059,7 @@ a, .btn {
   justify-content: center;
   padding-left: 16px; }
 
-.menu__main {
+.menu__modals {
   display: flex;
   width: 40%;
   padding-left: 10px;
@@ -1202,7 +1202,7 @@ a, .btn {
     height: 50px; } }
 
 @media (min-width: 550px) {
-  .menu__main {
+  .menu__modals {
     width: 60%;
     justify-content: space-between; }
   .menu__burger {
@@ -1250,7 +1250,7 @@ a, .btn {
       height: 32px;
       left: 83px;
       top: 5px; }
-  .menu__main {
+  .menu__modals {
     width: 66%;
     padding-left: 18px; }
   .repair {
@@ -1389,8 +1389,6 @@ a, .btn {
     margin: 0;
     padding-top: 3px;
     padding-left: 40px; }
-  .about {
-    align-items: end; }
   .about__title {
     display: block;
     font-size: .95rem;
@@ -1418,8 +1416,8 @@ a, .btn {
 @media (min-width: 1440px) {
   .header {
     display: none; }
-  .blur {
-    max-width: calc(100vw - 320px); }
+  .main-content {
+    max-width: 1120px; }
   .content {
     display: flex; }
   .modal-feedback {
