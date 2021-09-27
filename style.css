@@ -618,13 +618,13 @@ a, .btn {
   border-radius: 50%;
   border: 3px solid transparent; }
 
-.hover, .brend__btn:hover svg, .kind__btn:hover svg, .brend__btn:focus svg, .kind__btn:focus svg, .order-btn:hover, .order-btn:focus, .nav__btn:hover svg, .nav__btn:focus svg {
+.hover, .brend__btn:hover, .brend__btn:focus, .kind__btn:hover, .kind__btn:focus, .order-btn:hover, .order-btn:focus, .nav__btn:hover svg, .nav__btn:focus svg {
   opacity: 1;
   transition: .3s;
   border-color: #FF69B4;
   box-shadow: 0 0 20px rgba(252, 15, 192, 0.64); }
 
-.active, .brend__btn:active svg, .kind__btn:active svg, .order-btn:active, .nav__btn:active svg {
+.active, .brend__btn:active, .kind__btn:active, .order-btn:active, .nav__btn:active svg {
   border: 3px solid #33FF99;
   box-shadow: 0 0 20px #33ff99; }
 
@@ -651,7 +651,7 @@ a, .btn {
   text-transform: uppercase;
   margin-bottom: 19px; }
 
-.swiper-item, .brend-list__item, .kind-list__item, .price-list {
+.swiper-item, .brend__btn, .kind__btn, .kind-list__item, .price-list {
   background-color: white;
   border: 1px solid #EAEAEA;
   border-radius: 6px;
@@ -778,22 +778,25 @@ a, .btn {
   margin-bottom: 23px; }
 
 .brend-list__item {
-  padding: 6px 13px;
-  margin-left: 17px;
-  width: 240px;
-  align-items: center;
-  box-sizing: border-box;
-  justify-content: space-between;
-  height: 70px; }
+  margin-left: 17px; }
 
 .brend__btn {
-  padding-right: 1px;
-  padding-top: 5px; }
+  padding: 0 14px;
+  width: 240px;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px; }
 
 .kind__btn {
   align-self: flex-end;
   padding-bottom: 10px;
-  padding-right: 15px; }
+  padding-right: 15px;
+  flex-flow: column;
+  min-height: 160px;
+  justify-content: space-between;
+  width: 240px; }
+  .kind__btn svg {
+    align-self: flex-end; }
 
 .swiper-container {
   overflow-x: hidden; }
@@ -836,10 +839,11 @@ a, .btn {
   color: black;
   padding-top: 15px;
   padding-left: 14px;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: .95rem; }
 
 .prices-title {
-  margin-top: 4px;
+  margin-top: 7px;
   margin-bottom: 16px; }
 
 .price-list {
@@ -936,7 +940,7 @@ a, .btn {
   .brend-list {
     display: flex;
     flex-flow: wrap;
-    margin-left: 25px;
+    margin-left: 7px;
     overflow: hidden;
     height: 160px;
     margin-bottom: 25px; }
@@ -946,8 +950,7 @@ a, .btn {
     align-items: flex-start; }
   .brend-list__item {
     margin: 0;
-    width: 223px;
-    margin-right: 24px;
+    margin-right: 6px;
     margin-bottom: 18px; }
   .next-btn {
     margin-left: 24px; }
@@ -1360,7 +1363,15 @@ a, .btn {
       width: 81px; }
     .prices-list__item .price-value {
       width: 74px;
-      padding-left: 5px; } }
+      padding-left: 5px; }
+  .brend__btn {
+    width: 225px; }
+  .techs-list__item {
+    margin-left: 7px; }
+  .kind__btn {
+    width: 225px;
+    padding-right: 14px;
+    padding-bottom: 12px; } }
 
 @media (min-width: 920px) {
   .main {
@@ -1515,12 +1526,18 @@ a, .btn {
     margin-left: 20px; }
   .next-btn {
     margin-left: 19px; }
+  .techs-list__item {
+    margin-right: 15px; }
   .kind-title {
     margin-top: 51px;
     padding-left: 18px; }
   .kind-list__item {
     width: 235px;
     margin-right: 10px; }
+  .kind-tech {
+    font-size: 1rem; }
+  .kind__btn {
+    padding-right: 11px; }
   .prices-title {
     margin-top: 51px;
     padding-left: 18px; }
